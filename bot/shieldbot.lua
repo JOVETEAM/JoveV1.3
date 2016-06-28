@@ -487,7 +487,7 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+Smart SuperGroup Commands:
 
 !gpinfo
 Displays general info about the SuperGroup
@@ -637,11 +637,15 @@ Returns users name and id by username
 Returns group logs
 *Search for kick reasons using [#RTL|#spam|#lockmember]
 
+!ver
+Returns Server info and about Smart
+
 **You can use "#", "!", or "/" to begin all commands
 *Only owner can add members to SuperGroup
 (use invite link to invite)
 *Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
 *Only owner can use res, setowner, promote, demote, and log commands
+*Mega Smart V1.7
 ]],
   }
   serialize_to_file(config, './data/config.lua')
