@@ -1,6 +1,6 @@
-# [MeGa shield](https://telegram.me/AntiSpam_shield)
+# [MeGa Smart](https://telegram.me/MegaSmartTG)
 
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/hafez16/mega-shield/blob/supergroups/LICENSE)**.
+**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/grayhatp/mega-smart/blob/supergroups/LICENSE)**.
 
 | Command | Description |
 |:--------|:------------|
@@ -12,7 +12,7 @@
 * * *
 
 ## Commands
-MeGa-shield has several commands that are only usable at certain ranks.
+MeGa-smart has several commands that are only usable at certain ranks.
 
 
 ## General Commands
@@ -221,8 +221,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/hafez16/mega-shield.git
-cd mega-shield
+git clone https://github.com/GrayhatP/mega-smart.git
+cd mega-smart
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
