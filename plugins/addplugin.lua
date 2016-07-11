@@ -6,7 +6,7 @@ local function run(msg, matches)
     text,b = text:gsub('^!+','')
   end
     if not is_sudo(msg) then
-    return 'ADD PLUGINS ONLY BY SUDO😁'
+    return 'تنها بابا میتونه اضافه کنه😁'
   end
   local name = matches[2]
   local file = io.open("./"..name, "w")
