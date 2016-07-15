@@ -3,24 +3,19 @@ do
 
 function run(msg, matches)
   return [[ 
-Smart is an advanced and powerful administration bot based on TeleSeed and Copy from Mega Shield
+Phoenix is an advanced and powerful administration bot based on TeleSeed and Copy from Mega Shield
 CPU Core Model:Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
-Cores:3 Core
-Ram:4 Gig
-HDD:60 Gig SSD
+Cores:7 Core
+Ram:10 Gig
+HDD:120 Gig SSD
 Location Server:Hetzner Germany
-Team Channel: @SmartTG_CH
-Configure: @XzX_ERPO_XzX
-Manager: @XeX_ERPO_XeX
-Admin: @Us_Mm
+Configure: @vVv_ERPO_vVv
+Admin: @phonix_TG_bot
 Powerd by:
- #SmartTG
- 
-Special Thanks:
-@theking_1995
-Morteza No PV(Mega Sheild)
-Hafez(Mega Shild)
- and other people...]]
+ #Phoenix
+
+Tnx:
+other people...]]
 end
 
 return {
@@ -29,16 +24,16 @@ return {
   patterns = {
     "^[Vv]er$",
     "^[Vv]ersion$",
-    "^!smart$",
+    "^!phoenix$",
     "^!ver$",
     "^/ver$",
     "^#ver$",
-    "^%smart$",
-    "^$smart$",
-   "^#Smart$",
-   "^#Smart$",
-   "^/smart$",
-   "^#smart$",
+    "^%phoenix$",
+    "^$phoenix$",
+   "^#phoenix$",
+   "^#phoenix$",
+   "^/phoenix$",
+   "^#phoenix$",
   }, 
   run = run 
 }
