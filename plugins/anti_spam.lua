@@ -3,7 +3,7 @@ kicktable = {}
 
 do
 
-local TIME_CHECK = 2 -- seconds
+local TIME_CHECK = 1 -- seconds
 -- Save stats, ban user
 local function pre_process(msg)
   -- Ignore service msg
