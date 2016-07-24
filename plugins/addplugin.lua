@@ -19,7 +19,7 @@ local function run(msg, matches)
   description = "a Usefull plugin for sudo !",
   usage = "A plugins to add Another plugins to the server",
   patterns = {
-    "^plugin (.+) (.*)$"
+    "^[/!#]plugin (.+) (.*)$"
   },
   run = run
 }
