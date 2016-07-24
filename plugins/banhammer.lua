@@ -94,7 +94,7 @@ local function kick_ban_res(extra, success, result)
 		receiver = 'channel#id'..chat_id
 	  end
 	  if success == 0 then
-		return send_large_msg(receiver, "Cannot find user by that username!")
+		return send_large_msg(receiver, "هیچ خری بااین یوزرنیم موجود نیس!")
 	  end
       local member_id = result.peer_id
       local user_id = member_id
@@ -107,27 +107,27 @@ local function kick_ban_res(extra, success, result)
 			return
          end
          if is_momod2(member_id, chat_id) and not is_admin2(sender) then
-            send_large_msg(receiver, "You can't kick mods/owner/admins")
+            send_large_msg(receiver, "خره نمیتونی ادمینا یا سودهاروبن کنی")
 			return
          end
 		 kick_user(member_id, chat_id)
       elseif get_cmd == 'ban' then
         if is_momod2(member_id, chat_id) and not is_admin2(sender) then
-			send_large_msg(receiver, "You can't ban mods/owner/admins")
+			send_large_msg(receiver, "خره نمیتونی ادمینا یا سودهاروبن کنی")
 			return
         end
-        send_large_msg(receiver, 'User @'..member..' ['..member_id..'] banned')
+        send_large_msg(receiver, 'حاجی @'..member..' ['..member_id..'] بن شد')
 		ban_user(member_id, chat_id)
       elseif get_cmd == 'unban' then
-        send_large_msg(receiver, 'User @'..member..' ['..member_id..'] unbanned')
+        send_large_msg(receiver, 'حاجی @'..member..' ['..member_id..'] ازادشد')
         local hash =  'banned:'..chat_id
         redis:srem(hash, member_id)
-        return 'User '..user_id..' unbanned'
+        return 'حاجی '..user_id..' ازاد شد'
       elseif get_cmd == 'banall' then
-        send_large_msg(receiver, 'User @'..member..' ['..member_id..'] globally banned')
+        send_large_msg(receiver, 'حاجی @'..member..' ['..member_id..'] کلا رفت بدرک')
 		banall_user(member_id)
       elseif get_cmd == 'unbanall' then
-        send_large_msg(receiver, 'User @'..member..' ['..member_id..'] globally unbanned')
+        send_large_msg(receiver, 'حاجی @'..member..' ['..member_id..'] کلا ازاد شد')
 	    unbanall_user(member_id)
     end
 end
@@ -136,7 +136,7 @@ local function run(msg, matches)
 local support_id = msg.from.id
  if matches[1]:lower() == 'id' and msg.to.type == "chat" or msg.to.type == "user" then
     if msg.to.type == "user" then
-      return "Bot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
+      return "ایدی خودم: "..msg.to.id.. "\n\nایدی تو: "..msg.from.id
     end
     if type(msg.reply_id) ~= "nil" then
       local print_name = user_print_name(msg.from):gsub("‮", "")
