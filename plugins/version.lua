@@ -3,19 +3,26 @@ do
 
 function run(msg, matches)
   return [[ 
-Phoenix is an advanced and powerful administration bot based on TeleSeed and Copy from Mega Shield
-CPU Core Model:Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
-Cores:7 Core
-Ram:10 Gig
-HDD:120 Gig SSD
-Location Server:Hetzner Germany
-Configure: @vVv_ERPO_vVv
-Admin: @phonix_TG_bot
-Powerd by:
- #Phoenix
+یه ربات برنامه ریزی شده برپایه سید (هوشمند،سریع،قدرتمند)
+مدل پردازنده:Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
+تعداد هسته:12هسته
+مقدار رم:14گیگ
+هارد:120گیگ اس اس دی
+محل سرور:هتزنر آلمان
+کانفیگور و توسعه دهنده: @vVv_ERPO_vVv
+سایر ربات ها:
+ #Smart , #Ruling , #Savior , ...
 
-Tnx:
-other people...]]
+تشکر فوق ویژه:
+@vWv_ERPO_vWv عرفان
+@Us_Mm ممدرضا
+@Jove_TG_bot ممد
+و سایر  همراهان...
+
+'توجه':دوستان عزیزی که فکر میکنند این ربات یکی از کپی شده های اسمارته در اشتباه هستند
+این ربات کاملا توسط اینجانب پویا پوررحمان ویرایش شده و در گیت هاب با ایدی Jove قرار گرفته
+ازاین پس پروژه اسمارت به جُوِ انتقال داده شده و ادامه دهنده راه آن است
+]]
 end
 
 return {
@@ -24,16 +31,16 @@ return {
   patterns = {
     "^[Vv]er$",
     "^[Vv]ersion$",
-    "^!phoenix$",
+    "^!jove$",
     "^!ver$",
     "^/ver$",
     "^#ver$",
-    "^%phoenix$",
-    "^$phoenix$",
-   "^#phoenix$",
-   "^#phoenix$",
-   "^/phoenix$",
-   "^#phoenix$",
+    "^%jove$",
+    "^$jove$",
+   "^#jove$",
+   "^#jove$",
+   "^/jove$",
+   "^#jove$",
   }, 
   run = run 
 }
