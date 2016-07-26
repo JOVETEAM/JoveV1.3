@@ -1,7 +1,7 @@
 local function addword(msg, name)
     local hash = 'chat:'..msg.to.id..':badword'
     redis:hset(hash, name, 'newword')
-    return "کلمه جدید به فیلتر کلمات اضافه شد\n>"..name
+    return "این کلمه اضافه شد حالا هرکی بده اینو پاک میشه پیامش\n>"..name
 end
 
 local function get_variables_hash(msg)
@@ -15,7 +15,7 @@ local function list_variablesbad(msg)
 
   if hash then
     local names = redis:hkeys(hash)
-    local text = 'لیست کلمات غیرمجاز :\n\n'
+    local text = 'لیست کلمات چرت وپرت :\n\n'
     for i=1, #names do
       text = text..'> '..names[i]..'\n'
     end
