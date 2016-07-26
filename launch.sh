@@ -1,3 +1,5 @@
+--by @vVv_ERPO_vVv
+
 #!/usr/bin/env bash
 
 THIS_DIR=$(cd $(dirname $0); pwd)
@@ -116,3 +118,5 @@ else
    sleep 3
   done
 fi
+
+--by @vVv_ERPO_vVv
