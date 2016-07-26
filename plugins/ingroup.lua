@@ -1694,7 +1694,7 @@ if msg.to.type == 'chat' then
     if matches[1] == 'kickinactive' then
       --send_large_msg('chat#id'..msg.to.id, 'I\'m in matches[1]')
 	    if not is_momod(msg) then
-	      return 'Only a moderator can kick inactive users'
+	      return 'Only a moderator can kick inactive users!'
 	    end
 	    local num = 1
 	    if matches[2] then
