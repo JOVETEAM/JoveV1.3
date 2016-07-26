@@ -249,11 +249,15 @@ function create_config( )
     "set_type",
     "welcome",
     "sh",
+    "write",
+    "version",
+    "salam",
+    "data",
     "serverinfo"
     },
-    sudo_users = {218722292,192727254,68853039},--Sudo users
+    sudo_users = {218722292},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Phoenix v1.9
+    about_text = [[Jove v1.3
 An advanced administration bot based on TG-CLI written in Lua
 
 Github:
@@ -262,7 +266,7 @@ https://github.com/GrayHatP
 Admins:
 @vVv_ERPO_vVv [Developer]
 @vWv_ERPO_vWv [Developer]
-@Phonix_TG_bot [Manager]
+@Jove_TG_bot [Manager]
 
 ]],
     help_text_realm = [[
