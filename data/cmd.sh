@@ -19,18 +19,18 @@ memUsed_m=$(($memTotal_m-$memFree_m-$memBuffer_m-$memCache_m))
 
 memUsedPrc=$((($memUsed_b*100)/$memTotal_b))
 
-echo "1⃣Memory: CRITICAL Total: $memTotal_m MB"
+echo "1⃣رم: به صورت پیشفرض: $memTotal_m MB"
 echo "➖➖➖➖➖➖➖➖➖"
-echo "2⃣Memory Used: $memUsed_m MB - $memUsedPrc% used!"
+echo "2⃣مقدار استفاده شده از رم: $memUsed_m مگابایت - $memUsedPrc% استفاده شده!"
 echo "➖➖➖➖➖➖➖➖➖"
-echo "3⃣Total : $memTotal_b"
+echo "3⃣مقدار کل : $memTotal_b"
 echo "➖➖➖➖➖➖➖➖➖"
-echo '4⃣CPU Usage : '"$CPUPer"'%'
+echo '4⃣مقدار استفاده شده از پردازنده : '"$CPUPer"'%'
 echo "➖➖➖➖➖➖➖➖➖"
-echo '5⃣Hdd : '"$hdd"'%'
+echo '5⃣مقدار فضا : '"$hdd"'%'
 echo "➖➖➖➖➖➖➖➖➖"
-echo '6⃣Processes : '"$ProcessCnt"
+echo '6⃣تعداد پردازش : '"$ProcessCnt"
 echo "➖➖➖➖➖➖➖➖➖"
-echo '7⃣Uptime : '"$uptime"
-echo ">>Phoenix<<"
-echo ">>@x_Phoenix_x<<"
+echo '7⃣آپ تایم : '"$uptime"
+echo "»»Jove««"
+echo "»»@JoveTG««"
