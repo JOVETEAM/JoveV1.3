@@ -3,6 +3,7 @@ do
 
 function run(msg, matches)
   return [[ 
+  ورژن:Jove (Old Smart) V 1.3
 یه ربات برنامه ریزی شده برپایه سید (هوشمند،سریع،قدرتمند)
 مدل پردازنده:Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz
 تعداد هسته:12هسته
