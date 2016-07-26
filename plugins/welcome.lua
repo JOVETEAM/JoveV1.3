@@ -67,7 +67,7 @@ end
 
 local function run(msg, matches)
    if not msg.service then
-      return "Are you trying to troll me?"
+      return "سعی میکنی منو مسخره کنی حاجی؟"
    end
    --vardump(msg)
    if matches[1] == "chat_add_user" then
