@@ -482,165 +482,61 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-Phoenix SuperGroup Commands:
-
-!gpinfo
-Displays general info about the SuperGroup
-
-!admins
-Returns SuperGroup admins list
-
-!owner
-Returns group owner
-
-!modlist
-Returns Moderators list
-
-!bots
-Lists bots in SuperGroup
-
-!who
-Lists all users in SuperGroup
-
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!kick
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!ban
-Bans user from the SuperGroup
-
-!unban
-Unbans user from the SuperGroup
-
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-
-!id from
-Get ID of user message is forwarded from
-
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
-
-!setowner
-Sets the SuperGroup owner
-
-!promote [username|id]
-Promote a SuperGroup moderator
-
-!demote [username|id]
-Demote a SuperGroup moderator
-
-!setname
-Sets the chat name
-
-!setphoto
-Sets the chat photo
-
-!setrules
-Sets the chat rules
-
-!setabout
-Sets the about section in chat info(members list)
-
-!save [value] <text>
-Sets extra info for chat
-
-!get [value]
-Retrieves extra info for chat by value
-
-!newlink
-Generates a new group link
-
-!link
-Retireives the group link
-
-!rules
-Retrieves the chat rules
-
+🔰دستورات ویژه سوپر گروه🔰
+⭐️مخصوص کلی گروه:⭐️
+!gpinfo    =    نمایش مشخصات گروه
+!owner    =    نمایش ایدی صاحب گروه
+!modlist    =    لیست مد های گروه
+!link    =    دریافت لینک گروه
+!rules    =    دریافت قوانین گروه
+!settings    =    دریافت تنظیمات گروه
+!mutelist    =    دریافت لیست موارد پاک شونده
+!silentlist    =    دریافت لیست خفه شده ها
+!filterlist    =    دریافت لیست کلمات فیلترشده
+!res    =    دریافت ایدی شخص
+!log    =    دریافت کاره های انجام شده
+!ver    =    دریافت مشخصات ربات
+!date    =    دریافت تاریخ وساعت
+!write [text]    =    نوشتن متن فانتزی
+⭐️مدیریت یک فرد:⭐️
+!block    =    بلاک فرد از گروه
+!kick    =    اخراج فرد از گروه
+!ban    =    مسدودیت فرد از گروه
+!unban    =    خارج کردن فرد از مسدودیت
+!id    =    دریافت ایدی فرد
+!kickme    =    اخراج خود
+!setowner    =    تنظیم فرد به عنوان صاحب گروه
+!promote [username|id]    =    ارتقا فرد
+!demote [username|id]    =    تنزل فرد
+!silent [username]    =   خفه کردن فرد
+⭐️شخصی سازی گروه:⭐️
+!type [name]    =    ثبت نوع گروه
+!setname    =    تنظیم نام گروه
+!setphoto    =    تنظیم عکس گروه
+!setrules    =    تنظیم قوانین گروه
+!setabout    =    تنظیم درباره گروه
+!save [value] <text>    =    ذخیره مقدار
+!get [value]    =    دریافت مقدار
+!setlink    =    ثبت لینک گروه
 !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
-*fosh: Delete badword msg*
-*fwd: Delete forward msg*
-
+قفل مقادیر{لینک/حساسیت/اسپم/فارسی،عربی/اعضا/راستچین/استیکر/مخاطب ها/سخت گیرانه/تگ/یوزرنیم/فروارد/ریپلای/فحاشی/ورودوخروج/خروج/جوین/ایموجی/انگلیسی/رسانه/اپراتور}
 !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
-
+باز کردن مقادیر{لینک/حساسیت/اسپم/فارسی،عربی/اعضا/راستچین/استیکر/مخاطب ها/سخت گیرانه/تگ/یوزرنیم/فروارد/ریپلای/فحاشی/ورودوخروج/خروج/جوین/ایموجی/انگلیسی/رسانه/اپراتور}
 !mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
-
+پاک کردن{همه چیز/صدا/گیف/تصویر/فیلم/سرویس}
 !unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!type [name]
-set type for supergroup
-
-!settings
-Returns chat settings
-
-!mutelist
-Returns mutes for chat
-
-!silent [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
-
-!silentlist
-Returns list of muted users in chat
-
-!banlist
-Returns SuperGroup ban list
-
+فعال کردن{همه چیز/صدا/گیف/تصویر/فیلم/سرویس}
+!setflood [value]    =   تنظیم حساسیت
 !clean [rules|about|modlist|silentlist|filterlist]
-
-!del
-Deletes a message by reply
-
-!filter [word]
-bot Delete word if member send
-
-!unfilter [word]
-Delete word in filter list
-
-!filterlist
-get filter list
-
-!clean msg [value]
-
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
-
-!res [username]
-Returns users name and id by username
-
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-
-!ver
-Returns Server info and about Smart
-
-**You can use "#", "!", or "/" to begin all commands
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-*Only owner can use res, setowner, promote, demote, and log commands
-*Phoenix V1.9
+پاک کردن{قوانین/درباره/مدلیست/لیست خفه شده ها/کلمات فیلترشده}
+!del    =   پاک کردن یک پیام
+!filter [word]    =   اضافه کردن کلمه به لیست فیلترشده
+!unfilter [word]    =   پاک کردن کلمه از لیست فیلتر شده
+!clean msg [value]    =   پاک کردن مقدار تعیین شده پیام
+!public [yes|no]    =   تعیین عمومی بودن گروه
+🔰تمامی دستورات با ! و # و / اجرا خواهند شد🔰
+❗️این دستورات برای صاحبان گروه و مقامات بالاتر میباشد❗️
+🌟Jove V1.3🌟
 ]],
   }
   serialize_to_file(config, './data/config.lua')
