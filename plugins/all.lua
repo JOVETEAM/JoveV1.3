@@ -108,7 +108,7 @@ local function all(msg,target,receiver)
   local modlist = modlist(target)
   text = text.."\n\nMods: \n"..modlist
   local link = get_link(target)
-  text = text.."\n\nlink: \n"..link
+  text = text.."\n\nLink: \n"..link
   local stats = chat_stats(target)
   text = text.."\n\n"..stats
   local mutes_list = mutes_list(target)
