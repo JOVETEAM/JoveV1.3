@@ -8,8 +8,8 @@ local function callbackres(extra, success, result)
         send_large_msg(chat, 'User is banned.')
         send_large_msg(channel, 'User is banned.')
 	elseif is_gbanned(result.id) then
-	    send_large_msg(chat, 'User is globaly banned.')
-		send_large_msg(channel, 'User is globaly banned.')
+	    send_large_msg(chat, 'حاجی ما مسدود همگانیه.')
+		send_large_msg(channel, 'حاجی ما مسدود همگانیه.')
 	else    
 	    chat_add_user(chat, user, ok_cb, false) 
 		channel_invite(channel, user, ok_cb, false)
@@ -21,11 +21,11 @@ function run(msg, matches)
 	return
   end
   if not is_admin1(msg) then -- For admins only !
-		return 'Only admins can invite.'
+		return 'تنها مدیرا میتونن دعوت بدن.'
   end
   if not is_realm(msg) then
     if data[tostring(msg.to.id)]['settings']['lock_member'] == 'yes' and not is_admin1(msg) then
-		  return 'Group is private.'
+		  return 'گروه شخصیه.'
     end
   end
 	if msg.to.type ~= 'chat' or msg.to.type ~= 'channel' then 
