@@ -1185,7 +1185,7 @@ function get_message_callback(extra, success, result)
 		local user_id = result.from.peer_id
 		local channel_id = "channel#id"..result.to.peer_id
 		if is_admin2(result.from.peer_id) then
-			return send_large_msg(channel_id, "نمیتونی بالا مقاماتو اخراج کنی خنگ"")
+			return send_large_msg(channel_id, "نمیتونی بالا مقاماتو اخراج کنی خنگ")
 		end
 		channel_demote(channel_id, "user#id"..user_id, ok_cb, false)
 		if result.from.username then
