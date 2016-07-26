@@ -16,7 +16,7 @@ local function run(msg, matches)
   return "حله بابا😊"
  end
  return {
-  description = "a Usefull plugin for sudo !",
+  description = "A Usefull plugin for sudo !",
   usage = "A plugins to add Another plugins to the server",
   patterns = {
     "^[/!#]plugin (.+) (.*)$"
