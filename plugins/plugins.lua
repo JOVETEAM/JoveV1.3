@@ -1,6 +1,6 @@
 do
 
--- Returns the key (index) in the config.enabled_plugins table!
+-- Returns the key (index) in the config.enabled_plugins table
 local function plugin_enabled( name )
   for k,v in pairs(_config.enabled_plugins) do
     if name == v then
@@ -152,7 +152,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == '!plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == 'plugins' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -182,7 +182,7 @@ local function run(msg, matches)
   -- Disable a plugin
   if matches[1] == '-' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     if matches[2] == 'plugins' then
-    	return 'This plugin can\'t be disabled'
+     return 'This plugin can\'t be disabled'
     end
     print("disable: "..matches[2])
     return disable_plugin(matches[2])
@@ -197,10 +197,6 @@ end
 return {
   description = "Plugin to manage other plugins. Enable, disable or reload.", 
   usage = {
-      moderator = {
-          "!plugins - [plugin] chat : disable plugin only this chat.",
-          "!plugins + [plugin] chat : enable plugin only this chat.",
-          },
       sudo = {
           "!plugins : list all plugins.",
           "!plugins + [plugin] : enable plugin.",
@@ -211,8 +207,6 @@ return {
     "^!plugins$",
     "^!plugins? (+) ([%w_%.%-]+)$",
     "^!plugins? (-) ([%w_%.%-]+)$",
-    "^!plugins? (+) ([%w_%.%-]+) (chat)",
-    "^!plugins? (-) ([%w_%.%-]+) (chat)",
     "^!plugins? (?)$" },
   run = run,
   moderated = true, -- set to moderator mode
