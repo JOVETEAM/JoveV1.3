@@ -81,13 +81,13 @@ local function bot_stats()
     return count]]
 
   -- Users
-  local hash = 'پیاما:*:'..our_id
+  local hash = '🔆پیاما:*:'..our_id
   local r = redis:eval(redis_scan, 1, hash)
-  local text = 'یوزرا: '..r
+  local text = '🔆یوزرا: '..r
 
   hash = 'chat:*:users'
   r = redis:eval(redis_scan, 1, hash)
-  text = text..'\nگروه ها: '..r
+  text = text..'\n🔆گروه ها: '..r
   return text
 end
 local function run(msg, matches)
@@ -140,11 +140,11 @@ end
 
 return {
   patterns = {
-    "^[#!/]([Ss]tats)$",
-    "^[#!/]([Ss]tatslist)$",
-    "^[#!/]([Ss]tats) (group) (%d+)",
-    "^[#!/]([Ss]tats) (jove)",
-	"^[#!/]([Jj]ove)"
+    "^([Ss]tats)$",
+    "^([Ss]tatslist)$",
+    "^([Ss]tats) (group) (%d+)",
+    "^([Ss]tats) (jove)",
+	"^([Jj]ove)"
     }, 
   run = run
 }
