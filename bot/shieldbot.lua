@@ -484,57 +484,61 @@ will return group ban list
 	help_text_super =[[
 🔰دستورات ویژه سوپر گروه🔰
 ⭐️مخصوص کلی گروه:⭐️
-!gpinfo    =    نمایش مشخصات گروه
-!owner    =    نمایش ایدی صاحب گروه
-!modlist    =    لیست مد های گروه
-!link    =    دریافت لینک گروه
-!rules    =    دریافت قوانین گروه
-!settings    =    دریافت تنظیمات گروه
-!mutelist    =    دریافت لیست موارد پاک شونده
-!silentlist    =    دریافت لیست خفه شده ها
-!filterlist    =    دریافت لیست کلمات فیلترشده
-!res    =    دریافت ایدی شخص
-!log    =    دریافت کاره های انجام شده
-!ver    =    دریافت مشخصات ربات
-!date    =    دریافت تاریخ وساعت
-!write [text]    =    نوشتن متن فانتزی
+gpinfo    =    نمایش مشخصات گروه
+owner    =    نمایش ایدی صاحب گروه
+modlist    =    لیست مد های گروه
+link    =    دریافت لینک گروه
+rules    =    دریافت قوانین گروه
+settings    =    دریافت تنظیمات گروه
+mutelist    =    دریافت لیست موارد پاک شونده
+silentlist    =    دریافت لیست خفه شده ها
+filterlist    =    دریافت لیست کلمات فیلترشده
+res    =    دریافت ایدی شخص
+log    =    دریافت کاره های انجام شده
+ver    =    دریافت مشخصات ربات
+date    =    دریافت تاریخ وساعت
+write [text]    =    نوشتن متن فانتزی
+aparat [text]    =    جستجو یک متن در آپارات
+info    =    مشخصات یک فرد
+adddeveloper    =    دعوت توسعه دهنده
+linkpv    =    ارسال لینک گروه به پی وی
 ⭐️مدیریت یک فرد:⭐️
-!block    =    بلاک فرد از گروه
-!kick    =    اخراج فرد از گروه
-!ban    =    مسدودیت فرد از گروه
-!unban    =    خارج کردن فرد از مسدودیت
-!id    =    دریافت ایدی فرد
-!kickme    =    اخراج خود
-!setowner    =    تنظیم فرد به عنوان صاحب گروه
-!promote [username|id]    =    ارتقا فرد
-!demote [username|id]    =    تنزل فرد
-!silent [username]    =   خفه کردن فرد
+block    =    بلاک فرد از گروه
+kick    =    اخراج فرد از گروه
+ban    =    مسدودیت فرد از گروه
+unban    =    خارج کردن فرد از مسدودیت
+id    =    دریافت ایدی فرد
+kickme    =    اخراج خود
+setowner    =    تنظیم فرد به عنوان صاحب گروه
+promote [username|id]    =    ارتقا فرد
+demote [username|id]    =    تنزل فرد
+silent [username]    =   خفه کردن فرد
 ⭐️شخصی سازی گروه:⭐️
-!type [name]    =    ثبت نوع گروه
-!setname    =    تنظیم نام گروه
-!setphoto    =    تنظیم عکس گروه
-!setrules    =    تنظیم قوانین گروه
-!setabout    =    تنظیم درباره گروه
-!save [value] <text>    =    ذخیره مقدار
-!get [value]    =    دریافت مقدار
-!setlink    =    ثبت لینک گروه
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+type [name]    =    ثبت نوع گروه
+setname    =    تنظیم نام گروه
+setphoto    =    تنظیم عکس گروه
+setrules    =    تنظیم قوانین گروه
+setabout    =    تنظیم درباره گروه
+save [value] <text>    =    ذخیره مقدار
+get [value]    =    دریافت مقدار
+setlink    =    ثبت لینک گروه
+lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
 قفل مقادیر{لینک/حساسیت/اسپم/فارسی،عربی/اعضا/راستچین/استیکر/مخاطب ها/سخت گیرانه/تگ/یوزرنیم/فروارد/ریپلای/فحاشی/ورودوخروج/خروج/جوین/ایموجی/انگلیسی/رسانه/اپراتور}
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
+unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
 باز کردن مقادیر{لینک/حساسیت/اسپم/فارسی،عربی/اعضا/راستچین/استیکر/مخاطب ها/سخت گیرانه/تگ/یوزرنیم/فروارد/ریپلای/فحاشی/ورودوخروج/خروج/جوین/ایموجی/انگلیسی/رسانه/اپراتور}
-!mute [all|audio|gifs|photo|video|service]
+mute [all|audio|gifs|photo|video|service]
 پاک کردن{همه چیز/صدا/گیف/تصویر/فیلم/سرویس}
-!unmute [all|audio|gifs|photo|video|service]
+unmute [all|audio|gifs|photo|video|service]
 فعال کردن{همه چیز/صدا/گیف/تصویر/فیلم/سرویس}
-!setflood [value]    =   تنظیم حساسیت
-!clean [rules|about|modlist|silentlist|filterlist]
+setflood [value]    =   تنظیم حساسیت
+clean [rules|about|modlist|silentlist|filterlist]
 پاک کردن{قوانین/درباره/مدلیست/لیست خفه شده ها/کلمات فیلترشده}
-!del    =   پاک کردن یک پیام
-!filter [word]    =   اضافه کردن کلمه به لیست فیلترشده
-!unfilter [word]    =   پاک کردن کلمه از لیست فیلتر شده
-!clean msg [value]    =   پاک کردن مقدار تعیین شده پیام
-!public [yes|no]    =   تعیین عمومی بودن گروه
-🔰تمامی دستورات با ! و # و / اجرا خواهند شد🔰
+del    =   پاک کردن یک پیام
+filter [word]    =   اضافه کردن کلمه به لیست فیلترشده
+unfilter [word]    =   پاک کردن کلمه از لیست فیلتر شده
+clean msg [value]    =   پاک کردن مقدار تعیین شده پیام
+public [yes|no]    =   تعیین عمومی بودن گروه
+🔰تمامی دستورات بدون ! و # و / اجرا خواهند شد🔰
 ❗️این دستورات برای صاحبان گروه و مقامات بالاتر میباشد❗️
 🌟Jove V1.3🌟
 ]],
