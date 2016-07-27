@@ -8,7 +8,7 @@ return text
 end
 return {
   patterns = {
-  "^[/!#]([Dd]ate)$"
+  "^([Dd]ate)$"
   }, 
 run = run 
 } 
