@@ -19,18 +19,18 @@ memUsed_m=$(($memTotal_m-$memFree_m-$memBuffer_m-$memCache_m))
 
 memUsedPrc=$((($memUsed_b*100)/$memTotal_b))
 
-echo "1⃣رم: به صورت پیشفرض: $memTotal_m MB"
-echo "➖➖➖➖➖➖➖➖➖"
-echo "2⃣مقدار استفاده شده از رم: $memUsed_m مگابایت - $memUsedPrc% استفاده شده!"
-echo "➖➖➖➖➖➖➖➖➖"
-echo "3⃣مقدار کل : $memTotal_b"
-echo "➖➖➖➖➖➖➖➖➖"
-echo '4⃣مقدار استفاده شده از پردازنده : '"$CPUPer"'%'
-echo "➖➖➖➖➖➖➖➖➖"
-echo '5⃣مقدار فضا : '"$hdd"'%'
-echo "➖➖➖➖➖➖➖➖➖"
-echo '6⃣تعداد پردازش : '"$ProcessCnt"
-echo "➖➖➖➖➖➖➖➖➖"
-echo '7⃣آپ تایم : '"$uptime"
+echo "1-رم: به صورت پیشفرض: $memTotal_m MB"
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo "2-مقدار استفاده شده از رم: $memUsed_m مگابایت - $memUsedPrc% استفاده شده!"
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo "3-مقدار کل : $memTotal_b"
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo '4-مقدار استفاده شده از پردازنده : '"$CPUPer"'%'
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo '5-مقدار فضا : '"$hdd"'%'
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo '6-تعداد پردازش : '"$ProcessCnt"
+echo "🔹🔹🔹🔹🔹🔹🔹🔹🔹"
+echo '7-آپ تایم : '"$uptime"
 echo "»»Jove««"
 echo "»»@JoveTG««"
