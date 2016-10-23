@@ -1,4 +1,5 @@
-# [Jove](https://telegram.me/grayhatp/jove)
+<p align="center"> ![http://s9.picofile.com/file/8271934684/1_3.png](http://s9.picofile.com/file/8271934684/1_3.png)
+# [Jove V1.3](https://telegram.me/JoveTG)
 
 **An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/grayhatp/jove/blob/supergroups/LICENSE)**.
 
